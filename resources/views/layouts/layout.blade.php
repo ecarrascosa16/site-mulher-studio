@@ -67,7 +67,7 @@
         let simboloMenuH = document.getElementById('simboloMenuH');
         let simboloMenuX = document.getElementById('simboloMenuX');
         simboloMenuX.style.display = 'none';
-        menu.style.display = 'nonae';
+        menu.style.display = 'none';
         
         function openMenu() {
             simboloMenuX.style.display = 'block';
