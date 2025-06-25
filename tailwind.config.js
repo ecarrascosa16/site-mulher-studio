@@ -6,7 +6,8 @@ export default {
     content: [
         './resources/views/**/*.blade.php',
         './resources/js/**/*.js',
-    ],
+        './storage/framework/views/*.php',
+        ],
 
 
     theme: {
