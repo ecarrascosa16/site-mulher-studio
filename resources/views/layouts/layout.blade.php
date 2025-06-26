@@ -12,7 +12,7 @@
     <title>Studio Mulher</title>
 </head>
 <body>
-    <header class="bg-studio-purple grid grid-cols-[1fr_2fr_2fr] items-center w-full h-20
+    <header class="bg-studio-purple grid grid-cols-[1fr_2fr_2fr] items-center w-full h-20 shadow-md fixed top-0 left-0 z-50
     lg:grid-cols-[1fr_2fr_1fr]">
         <div class="flex justify-center items-center 
         lg:hidden">
@@ -65,9 +65,7 @@
         @endauth
     </div>
 
-    <main>
-        @yield('content')
-    </main>
+    @yield('content')
 
 </body>
 </html>

@@ -14,7 +14,9 @@ export default {
         extend: {
             colors: {
             'studio-golden': '#E3C29D',
-            'studio-pink': '#E6A4B4',
+            'studio-pink-white': '#E7DAE7',
+            'studio-pink': '#D6BDD6',
+            'studio-pink-black': "#C8A2C8",
             'studio-purple': '#a576a5',
             'studio-wine': '#822659',
             'studio-gray': '#3E3E3E',
