@@ -51,7 +51,7 @@
     <div id="menu">
         @auth
             <div>
-                <ul class="bg-studio-purple h-screen w-[200px] lg:hidden">
+                <ul class="bg-studio-purple h-screen w-[200px] mt-20 fixed z-50 lg:hidden ">
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Sobre nós</a></li>
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Serviços</a></li>
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Loja</a></li>
@@ -59,7 +59,7 @@
                 </ul>
             </div>
         @else 
-            <div class="border border-studio-purple p-2 lg:hidden">
+            <div class="bg-white border border-studio-purple w-full p-2 mt-20 fixed z-50 lg:hidden ">
                 <p class="text-red-600">Ops! Faça login para acessar esta parte do site.</p>
             </div>
         @endauth
