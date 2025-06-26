@@ -3,7 +3,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-* {
+ 
+/* * {
     border: 1px solid red;
-} */
+}  */
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: #E6A4B4;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
