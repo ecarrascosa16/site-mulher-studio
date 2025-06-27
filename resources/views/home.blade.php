@@ -45,7 +45,10 @@
             </div>
     </section>
     <section id="we-services" class="bg-studio-pink-white h-screen">
-
+        <h1 class="flex justify-center font-marcellus font-bold text-3xl p-6">Nossos Serviços</h1>
+        <div>
+            
+        </div>
     </section>
 </main>
 @endsection
