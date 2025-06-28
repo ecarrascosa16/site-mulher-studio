@@ -4,10 +4,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+   
 /* * {
     border: 1px solid red;
-}  */
+} */
 
 .nav-link {
     position: relative;
@@ -26,4 +26,10 @@
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: underline; 
+    font-size: 14px;
 }

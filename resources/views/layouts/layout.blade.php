@@ -67,5 +67,37 @@
 
     @yield('content')
 
+    <footer class="flex justify-around items-start bg-studio-purple p-4">
+        <div class="hidden | lg:block">
+            <img src="{{asset('images/logo-mulher-studio.png')}}" alt="Logo Studio Mulher" class="brightness-200 h-48">
+        </div>
+        <div>
+            <h1 class="text-white font-bold font-montserrat text-sm"><span class="material-symbols-outlined text-white relative top-[5px]">call</span> Contato</h1>
+            <ul class="flex items-center flex-col | lg:block">
+                <li><a href="#" class="footer-link font-montserrat">WhatsApp</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Telefone</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Email</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Endereço</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Sobre Nós</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-white font-bold font-montserrat text-sm"><span class="material-symbols-outlined text-white relative top-[5px]">mobile_2</span> Redes Sociais</h1>
+            <ul class="flex items-center flex-col | lg:block">
+                <li><a href="#" class="footer-link font-montserrat">Instagram</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Facebook</a></li>
+                <li><a href="#" class="footer-link font-montserrat">TikTok</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-white font-bold font-montserrat text-sm"><span class="material-symbols-outlined text-white relative top-[5px]">link</span> Links úteis</h1>
+            <ul class="flex items-center flex-col | lg:block">
+                <li><a href="#" class="footer-link font-montserrat">Sobre nós</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Serviços</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Loja</a></li>
+                <li><a href="#" class="footer-link font-montserrat">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
