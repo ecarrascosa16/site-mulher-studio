@@ -51,15 +51,16 @@
     <div id="menu">
         @auth
             <div>
-                <ul class="bg-studio-purple h-screen w-[200px] mt-20 fixed z-50 lg:hidden ">
-                    <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Sobre nós</a></li>
-                    <li class="py-5"><a href="{{route('service.index')}}" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Serviços</a></li>
-                    <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Loja</a></li>
-                    <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Contatos</a></li>
+                <ul class="bg-studio-purple h-screen w-[200px] mt-20 fixed z-50 lg:hidden p-3 ">
+                    <li class="py-4"><a href="#about" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Sobre nós</a></li>
+                    <li class="py-4"><a href="{{route('service.index')}}" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Serviços</a></li>
+                    <li class="py-4"><a href="#about" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Loja</a></li>
+                    <li class="py-4"><a href="#about" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Contatos</a></li>
                     @admin
                     <hr>
                     <p class="text-white text-xl font-marcellus text-center pt-3">Área admin</p>
-                    <li class="py-5"><a href="{{route('service.create')}}" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Criar serviço</a></li>
+                    <li class="py-4"><a href="{{route('service.create')}}" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Criar serviço</a></li>
+                    <li class="py-4"><a href="{{route('admin.service-schedules.index')}}" class="text-white text-xl font-marcellus p-1 hover:bg-studio-wine hover:rounded-r-lg">Administrar horários</a></li>
                     @endadmin
                 </ul>
             </div>

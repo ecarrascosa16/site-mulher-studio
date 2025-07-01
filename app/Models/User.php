@@ -24,6 +24,14 @@ class User extends Authenticatable
         'role',
     ];
 
+    public function appointment() {
+        return $this->hasMany(Appointment::class);
+    }
+
+    public function service() {
+        return $this->hasMany(Service::class, 'admin_id');
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

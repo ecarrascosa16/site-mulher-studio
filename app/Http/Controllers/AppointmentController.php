@@ -17,26 +17,16 @@ class AppointmentController extends Controller
             'time' => 'required',
         ]);
 
-        // Concatena a data e hora e converte para datetime
-        $dateTime = Carbon::parse($request->date . ' ' . $request->time);
+        $datetime = Carbon::parse($request->date . ' ' . $request->time);
 
-        // Verifica se o horário já está ocupado
-        $exists = Appointment::where('service_id', $request->service_id)
-            ->where('appointment_date', $dateTime)
-            ->exists();
-
-        if ($exists) {
-            return redirect()->back()->with('mensagem', 'Esse horário já foi agendado. Escolha outro.');
-        }
-
-        // Cria o agendamento
         Appointment::create([
             'user_id' => Auth::id(),
             'service_id' => $request->service_id,
-            'appointment_date' => $dateTime,
-            'status' => 'pending',
+            'appointment_date' => $datetime,
+            'status' => 'confirmed',
         ]);
 
-        return redirect()->back()->with('mensagem', 'Horário reservado! Agora é só realizar o pagamento.');
+        return redirect()->route('service.show', $request->service_id)
+            ->with('mensagem', 'Agendamento realizado com sucesso!');
     }
 }
