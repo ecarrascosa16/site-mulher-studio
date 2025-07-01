@@ -14,25 +14,6 @@ Alpine.start();
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  const teamswiper = new Swiper(".mySwiper", {
-    modules: [Pagination],
-    slidesPerView: 3,
-    spaceBetween: 30,
-    centeredSlides: true,
-    pagination: {
-      el: ".team-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidePerView: 1,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
-    }
-  });
-
   //Swiper
   const heroSwiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination, Autoplay],

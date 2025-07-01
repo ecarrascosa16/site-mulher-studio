@@ -99,61 +99,46 @@
         <h1 class="text-studio-wine font-marcellus font-bold text-3xl | lg:text-6xl">Conheça nossa equipe!</h1>
         <h2 class="text-studio-wine font-marcellus font-bold text-base mb-5 | lg:text-3xl">Aquela que cuida de você com carinho</h2>
         <div class="flex flex-col items-center">
-        
-        <div class="mySwiper w-full max-w-6xl px-4 flex flex-col items-center justify-center overflow-hidden border border-studio-wine">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <article class="border border-black rounded-lg h-full min-h-[430px] w-[330px] p-5">
-                        <img src="{{asset('images/home/equipe/mulher1.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
-                        <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Thailane Angelina</h1>
-                        <h2 class="text-studio-gray font-bold font-montserrat text-base">Sombrancelhas - Especialista em naturalizade</h2>
-                        <p class="text-studio-fray font-montserrat text-sm text-justify">Seu olhar merece destaque, e a Thai sabe exatamente como valorizar cada traço</p>
-                        <div class="flex">
-                            <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
-                            <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
-                        </div>
-                    </article>
+            <article class="border border-black rounded-lg h-full min-h-[300px] w-[250px] p-2  mb-5">
+                <img src="{{asset('images/home/equipe/mulher1.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
+                <h1 class="text-studio-gray font-bold font-montserrat text-lg pt-3">Thailane Angelina</h1>
+                <h2 class="text-studio-gray font-bold font-montserrat text-sm">Sombrancelhas - Especialista em naturalizade</h2>
+                <p class="text-studio-fray font-montserrat text-sm text-justify">Seu olhar merece destaque, e a Thai sabe exatamente como valorizar cada traço</p>
+                <div class="flex">
+                    <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-6 pt-2 mr-2"></a>
+                    <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-6 pt-2"></a>
                 </div>
-                <div class="swiper-slide">
-                    <article class="border border-black rounded-lg h-full min-h-[430px] w-[330px] p-5">
-                        <img src="{{asset('images/home/equipe/mulher2.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
-                        <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Damares Silva</h1>
-                        <h2 class="text-studio-gray font-bold font-montserrat text-base">Nail Designer - A beleza na ponta dos dedos</h2>
-                        <p class="text-studio-fray font-montserrat text-sm text-justify">Do clássico ao criativo: Damares entrega beleza em cada traço</p>
-                        <div class="flex">
-                            <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
-                            <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
-                        </div>
-                    </article>
+            </article>
+            <article class="border border-black rounded-lg h-full min-h-[300px] w-[250px] p-2  mb-5">
+                <img src="{{asset('images/home/equipe/mulher2.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
+                <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Damares Silva</h1>
+                <h2 class="text-studio-gray font-bold font-montserrat text-base">Nail Designer - A beleza na ponta dos dedos</h2>
+                <p class="text-studio-fray font-montserrat text-sm text-justify">Do clássico ao criativo: Damares entrega beleza em cada traço</p>
+                <div class="flex">
+                    <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
+                    <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
                 </div>
-                <div class="swiper-slide">
-                    <article class="border border-black rounded-lg h-full min-h-[430px] w-[330px] p-5">
-                        <img src="{{asset('images/home/equipe/mulher3.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
-                        <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Zuleide Carrascosa</h1>
-                        <h2 class="text-studio-gray font-bold font-montserrat text-base">Cabelos e depilação - Um toque profissional faz toda a diferença</h2>
-                        <p class="text-studio-fray font-montserrat text-sm text-justify">Transformar cabelos e corpos é mais do que mudar o visual: é elevar a autoestima</p>
-                        <div class="flex">
-                            <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
-                            <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
-                        </div>
-                    </article>
+            </article>
+            <article class="border border-black rounded-lg h-full min-h-[300px] w-[250px] p-2  mb-5">
+                <img src="{{asset('images/home/equipe/mulher3.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
+                <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Zuleide Carrascosa</h1>
+                <h2 class="text-studio-gray font-bold font-montserrat text-base">Cabelos e depilação - Um toque profissional faz toda a diferença</h2>
+                <p class="text-studio-fray font-montserrat text-sm text-justify">Transformar cabelos e corpos é mais do que mudar o visual: é elevar a autoestima</p>
+                <div class="flex">
+                    <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
+                    <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
                 </div>
-                <div class="swiper-slide">
-                    <article class="border border-black rounded-lg h-full min-h-[430px] w-[330px] p-5">
-                        <img src="{{asset('images/home/equipe/mulher4.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
-                        <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Thais Carrascosa</h1>
-                        <h2 class="text-studio-gray font-bold font-montserrat text-base">Nail Designer - O poder de unhas bem-feitas</h2>
-                        <p class="text-studio-fray font-montserrat text-sm text-justify">Com anos de experiência e amor pelo que faz, ela transforma unhas em arte.</p>
-                        <div class="flex">
-                            <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
-                            <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
-                        </div>
-                    </article>
+            </article>
+            <article class="border border-black rounded-lg h-full min-h-[300px] w-[250px] p-2  mb-5">
+                <img src="{{asset('images/home/equipe/mulher4.jpg')}}" alt="Imagem de uma funcionaria" class="rounded-lg w-full max-w-[330px] mx-auto">
+                <h1 class="text-studio-gray font-bold font-montserrat text-2xl pt-3">Thais Carrascosa</h1>
+                <h2 class="text-studio-gray font-bold font-montserrat text-base">Nail Designer - O poder de unhas bem-feitas</h2>
+                <p class="text-studio-fray font-montserrat text-sm text-justify">Com anos de experiência e amor pelo que faz, ela transforma unhas em arte.</p>
+                <div class="flex">
+                    <a href="#"><img src="{{asset('images/home/equipe/instagram.png')}}" alt="Instagram" class="w-8 pt-2 mr-2"></a>
+                    <a href="#"><img src="{{asset('images/home/equipe/linkedin.png')}}" alt="LinkedIn" class="w-8 pt-2"></a>
                 </div>
-                
-                <!-- Adicione mais .swiper-slide aqui -->
-            </div>
-            <div class="team-pagination mt-4"></div>
+            </article>
         </div>
 
     </section>
