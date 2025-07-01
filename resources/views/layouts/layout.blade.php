@@ -20,13 +20,13 @@
             <span id="simboloMenuX" onclick="closeMenu()" class="material-symbols-outlined text-white cursor-pointer">close</span>
         </div>
         <div class="flex justify-center items-center">
-            <img src="{{ asset('images/logo-mulher-studio.png') }}" alt="Logo do salão" class="brightness-200 h-[70px]">
+            <a href="{{route('home')}}"><img src="{{ asset('images/logo-mulher-studio.png') }}" alt="Logo do salão" class="brightness-200 h-[70px]"></a>
         </div>
         <nav class="hidden lg:block">
             <ul class="flex flex-row justify-around">
                 <li><a href="#about" class="nav-link text-white font-marcellus 
                 lg:text-2xl">Sobre nós</a></li>
-                <li><a href="#services" class="nav-link text-white font-marcellus 
+                <li><a href="{{route('service.index')}}" class="nav-link text-white font-marcellus 
                 lg:text-2xl">Serviços</a></li>
                 <li><a href="#shop" class="nav-link text-white font-marcellus
                 lg:text-2xl">Loja</a></li>
@@ -53,9 +53,14 @@
             <div>
                 <ul class="bg-studio-purple h-screen w-[200px] mt-20 fixed z-50 lg:hidden ">
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Sobre nós</a></li>
-                    <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Serviços</a></li>
+                    <li class="py-5"><a href="{{route('service.index')}}" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Serviços</a></li>
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Loja</a></li>
                     <li class="py-5"><a href="#about" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Contatos</a></li>
+                    @admin
+                    <hr>
+                    <p class="text-white text-xl font-marcellus text-center pt-3">Área admin</p>
+                    <li class="py-5"><a href="{{route('service.create')}}" class="text-white text-xl font-marcellus p-3 hover:bg-studio-wine hover:rounded-r-lg">Criar serviço</a></li>
+                    @endadmin
                 </ul>
             </div>
         @else 
@@ -67,7 +72,7 @@
 
     @yield('content')
 
-    <footer class="flex justify-around items-start bg-studio-purple p-4">
+    <footer class="flex justify-around bg-studio-purple p-4">
         <div class="hidden | lg:block">
             <img src="{{asset('images/logo-mulher-studio.png')}}" alt="Logo Studio Mulher" class="brightness-200 h-48">
         </div>

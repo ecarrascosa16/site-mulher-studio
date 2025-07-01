@@ -1,3 +1,4 @@
+// MENU HEADER
 document.addEventListener('DOMContentLoaded', () => {
     const menu = document.getElementById('menu');
     const simboloMenuH = document.getElementById('simboloMenuH');
@@ -22,3 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+
+//MENSAGEM DE SUCESSO OU ERRO
+document.addEventListener('DOMContentLoaded', () => {
+    const $mensagem = document.getElementById('mensagem')
+        window.closeMensagem = () => {
+            mensagem.style.display = 'none';
+        }
+})
