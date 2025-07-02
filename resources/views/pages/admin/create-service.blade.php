@@ -9,11 +9,11 @@
                 <span id="simboloMenuX" onclick="closeMensagem()" class="material-symbols-outlined text-white cursor-pointer">close</span>
             </div>        
         @endif
-        <form action="{{route('service.store')}}" method="POST" class="w-80">
+        <form action="{{route('service.store')}}" method="POST" class="w-80 | lg:w-[600px]">
             @csrf
             <div class="mb-5">
                 <label for="title" class="block mb-2 text-sm font-medium text-gray-900">Serviço:</label>
-                <input type="text" name="title" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required/>
+                <input type="text" name="title" id="title" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required/>
             </div>
             <div class="mb-5">
                 <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Descrição:</label>

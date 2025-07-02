@@ -20,7 +20,10 @@
                 @endforeach
             </select>
         </div>
-
+        <div class="mb-4">
+            <label for="available_date" class="block font-semibold mb-1">Dia disponível:</label>
+            <input type="date" name="available_date" id="available_date" class="border rounded p-2 w-full" required>
+        </div>
         <div class="mb-4">
             <label for="time" class="block font-semibold mb-1">Hora disponível (HH:mm):</label>
             <input type="time" name="time" id="time" class="border rounded p-2 w-full" required>
@@ -41,7 +44,7 @@
                         <button type="submit" 
                             class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 flex items-center gap-1"
                             title="Remover horário">
-                            {{ $schedule->time }} 
+                            {{ \Carbon\Carbon::parse($schedule->available_date)->format('d/m/Y') }} - {{ $schedule->time }}
                             <span class="text-lg leading-none">&times;</span>
                         </button>
                     </form>

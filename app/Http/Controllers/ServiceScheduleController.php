@@ -32,11 +32,13 @@ class ServiceScheduleController extends Controller
     {
         $request->validate([
             'service_id' => 'required|exists:services,id',
+            'available_date' => 'required|date',
             'time' => 'required|date_format:H:i',
         ]);
 
         ServiceSchedule::create([
             'service_id' => $request->service_id,
+            'available_date' => $request->available_date,
             'time' => $request->time,
         ]);
 
@@ -75,6 +77,6 @@ class ServiceScheduleController extends Controller
         $schedule = ServiceSchedule::findOrFail($id);
         $schedule->delete();
 
-        return redirect()->back()->with('success', 'Horário removido com sucesso!');
+        return redirect()->route('admin.service-schedules.index')->with('success', 'Horário removido com sucesso!');
     }
 }

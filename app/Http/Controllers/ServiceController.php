@@ -42,14 +42,20 @@ class ServiceController extends Controller
         $service = Service::with('schedules')->findOrFail($id);
         $selectedDate = $request->input('date');
 
-        // Pega todos os horários disponíveis desse serviço
-        $horarios = $service->schedules->pluck('time')->map(function ($time) {
-            return Carbon::parse($time)->format('H:i');
-        })->toArray();
-
+        $horarios = [];
         $bookedTimes = [];
 
+        // Se o usuário selecionou uma data...
         if ($selectedDate) {
+            // Filtra os horários para aquele dia específico
+            $horarios = $service->schedules
+                ->where('available_date', $selectedDate)
+                ->pluck('time')
+                ->map(function ($time) {
+                    return Carbon::parse($time)->format('H:i');
+                })->toArray();
+
+            // Pega os horários já marcados (bookings)
             $appointments = Appointment::where('service_id', $id)
                 ->whereDate('appointment_date', $selectedDate)
                 ->pluck('appointment_date');

@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('service_schedules', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('service_id')->constrained()->onDelete('cascade');
-            $table->time('time');
+            $table->foreignId('service_id')->constrained()->cascadeOnDelete();
+            $table->date('available_date'); // Dia exato que o horário é válido
+            $table->time('time'); // Horário disponível
             $table->timestamps();
         });
     }
