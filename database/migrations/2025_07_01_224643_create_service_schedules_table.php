@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('service_id')->constrained()->onDelete('cascade');
             $table->time('time');
-            $table->tinyInteger('day_of_week');
             $table->timestamps();
         });
     }

@@ -20,19 +20,7 @@
                 @endforeach
             </select>
         </div>
-        <div class="mb-4">
-            <label for="day_of_week" class="block font-semibold mb-1">Dia da semana:</label>
-            <select name="day_of_week" id="day_of_week" class="border rounded p-2 w-full" required>
-                <option value="">-- Escolha um dia --</option>
-                <option value="0">Domingo</option>
-                <option value="1">Segunda-feira</option>
-                <option value="2">Terça-feira</option>
-                <option value="3">Quarta-feira</option>
-                <option value="4">Quinta-feira</option>
-                <option value="5">Sexta-feira</option>
-                <option value="6">Sábado</option>
-            </select>
-        </div>
+
         <div class="mb-4">
             <label for="time" class="block font-semibold mb-1">Hora disponível (HH:mm):</label>
             <input type="time" name="time" id="time" class="border rounded p-2 w-full" required>

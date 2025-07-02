@@ -33,13 +33,11 @@ class ServiceScheduleController extends Controller
         $request->validate([
             'service_id' => 'required|exists:services,id',
             'time' => 'required|date_format:H:i',
-            'day_of_week' => 'required|integer|between:0,6'
         ]);
 
         ServiceSchedule::create([
             'service_id' => $request->service_id,
             'time' => $request->time,
-            'day_of_week' => $request->day_of_week,
         ]);
 
         return redirect()->back()->with('success', 'Horário adicionado com sucesso!');

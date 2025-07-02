@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ServiceSchedule extends Model
 {
-    protected $fillable = ['service_id', 'time', 'day_of_week'];
+    protected $fillable = ['service_id', 'time'];
 
     public function service(){
         return $this->belongsTo(Service::class);

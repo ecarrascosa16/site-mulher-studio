@@ -38,24 +38,17 @@ class ServiceController extends Controller
         return redirect()->back()->with('mensagem', 'Serviço criado com sucesso');
     }
 
-    public function show(Request $request, $id){
-        $service = Service::findOrFail($id);
-
+    public function show(Request $request, $id) {
+        $service = Service::with('schedules')->findOrFail($id);
         $selectedDate = $request->input('date');
 
-        $dayOfWeek = null;
-        if ($selectedDate) {
-            // Converte a data para o dia da semana (0 = domingo, 6 = sábado)
-            $dayOfWeek = Carbon::parse($selectedDate)->dayOfWeek;
-        }
+        // Pega todos os horários disponíveis desse serviço
+        $horarios = $service->schedules->pluck('time')->map(function ($time) {
+            return Carbon::parse($time)->format('H:i');
+        })->toArray();
 
-        // Busca os horários cadastrados para o serviço e para o dia da semana
-        $horarios = $dayOfWeek !== null
-            ? $service->schedules()->where('day_of_week', $dayOfWeek)->pluck('time')->toArray()
-            : [];
-
-        // Pega os horários já marcados para essa data (agendamentos)
         $bookedTimes = [];
+
         if ($selectedDate) {
             $appointments = Appointment::where('service_id', $id)
                 ->whereDate('appointment_date', $selectedDate)
